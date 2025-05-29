@@ -7,11 +7,12 @@ const confetti = new JSConfetti();
 const Intro = ({onFinish}) => {
     const pastelPinkGradient = `linear-gradient(90deg, #ff9ccd, #ffa6d2, #ff9ccd)`;
     const strings = [
-        "Hey, Yassmine",
+        "Hey, Yassmine!",
         "I made you a little something.",
         "It's not much, but I hope you'll like it.",
         "..."
     ];
+
 
     const [displayText, setDisplayText] = useState("");
     const [stringIndex, setStringIndex] = useState(0);
@@ -157,7 +158,7 @@ const TextingScene = ({ onComplete }) => {
         { sender: "me", text: "A marvel of biological resilience." },
         { sender: "me", text: "You are absolutely beautiful." },
         { sender: "me", text: "I know this will make me look like I'm unhealthily obsessed\nwith you." },
-        { sender: "me", text: "But the day you sent me the fit check for the event," },
+        { sender: "me", text: "But the day you sent me the fit check for the event" },
         { sender: "me", text: "I kept your picture looping for 30 minutes." },
         { sender: "me", text: "Only for my uncle to call me, making it impossible to replay\n(no I'm not mad, idk what you're talking about)." },
         { sender: "me", text: "You are all of this and more, way more than words can express." },
@@ -166,7 +167,9 @@ const TextingScene = ({ onComplete }) => {
         { sender: "me", text: "Thank you for everything." },
         { sender: "me", text: "Thank you for being a good storyteller." },
         { sender: "me", text: "Thank you for having a voice that makes everything feel a little less heavy." },
-        { sender: "me", text: "A voice so calming, so beautiful, so harmonious, so mellifluous (hehe tu l'as pas vu venir celle la),\nbut I digress..." },
+        { sender: "me", text: "A voice so calming, so beautiful, so" +
+                " harmonious, so mellifluous (hehe tu l'as pas vu venir" +
+                " celle la), but I digress..." },
         { sender: "me", text: "Thank you for being yourself, I wouldn't have it any other way." },
         { sender: "me", text: "Never ever change." },
         { sender: "me", text: "And yeah, I made this for you." },
