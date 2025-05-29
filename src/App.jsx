@@ -231,7 +231,7 @@ const TextingScene = ({ onComplete }) => {
 
     return (
         <div className="w-full h-full bg-black flex flex-col">
-            <div className="p-3 sm:p-4 text-white text-center font-mono border-b border-gray-800">
+            <div className="p-3 sm:p-4 text-white text-center font-mono border-b border-gray-800 sticky top-0 bg-black z-10">
                 <div className="text-lg sm:text-xl font-semibold">Ayman</div>
             </div>
 
